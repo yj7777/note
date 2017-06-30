@@ -44,9 +44,8 @@ MVVM解决了这个问题
 # MVVM
 Model-View-ViewModel
 Model<=>ViewModel<=>View
-### Model 中定义数据修改和操作的业务逻辑
-### View 负责将数据模型转化成UI展现出来
-### ViewModel：就是与界面(view)对应的Model。因为，模型往往是不能直接跟视图控件一一对应上的，所以，需要再定义一个数据对象专门对应view上的控件。而ViewModel的职责就是把Model对象封装成可以显示和接受输入的界面数据对象。
+### ViewModel：
+就是与界面(view)对应的Model。因为，模型往往是不能直接跟视图控件一一对应上的，所以，需要再定义一个数据对象专门对应view上的控件。而ViewModel的职责就是把Model对象封装成可以显示和接受输入的界面数据对象。
 通过双向数据绑定，连接View层和Model层，View数据的变化会同步到Model中，而Model数据的变化也会立即反应到View上。跳过了DOM操作。
 
 MVVM的核心思想：不用再关注数据如何呈现到页面，由框架更新Model和View。
